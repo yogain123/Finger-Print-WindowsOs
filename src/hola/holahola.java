@@ -163,9 +163,15 @@ class holahola
 					            fff4.renameTo(fff3);
 					            
 					            //--------------------------------------
-					            ProcessBuilder del = new ProcessBuilder(
+					            ProcessBuilder delMindtctOutput = new ProcessBuilder(
 					   				 "cmd.exe", "/c", "cd \"C:\\nbis_v5_0_0\\Rel_5.0.0\\mindtct\\bin\" && del output1.* output2.*");
-					            	 Process deleteProcess =del.start();
+					            	 Process deleteProcess1 =delMindtctOutput.start();
+					            	 
+					            	 
+					            	 
+					            ProcessBuilder delBozorth3Output = new ProcessBuilder(
+							   		  "cmd.exe", "/c", "cd \"C:\\nbis_v5_0_0\\Rel_5.0.0\\bozorth3\\bin\" && del output1.* output2.*");
+							          Process deleteProcess2 =delBozorth3Output.start();
 					   		//------------------------------------
 					            
 					            
