@@ -171,7 +171,10 @@ class holahola
 		    	
 		    
 		}
-		return "one or both image not present in database";
+			else if((c==1 && image1.equalsIgnoreCase(image2)))
+				return "Both the finger print are exactly name";
+			else
+				return "one or both image not present in database";
 		
 	 	
 }
